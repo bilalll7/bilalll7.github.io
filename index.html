@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Albilal</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+  <!-- My Css -->
+  <link rel="stylesheet" href="./assets/css/w3.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- feather icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav-left">
+      <img src="./assets/img/favicon.ico" alt="logo" onclick="reload()">
+    </div>
+    <div class="nav-right">
+      <button onclick="reload()">Home</button>
+      <button onclick="navLink('About')">About Me</button>
+      <button onclick="navLink('Skill')">My Skill</button>
+      <button onclick="navLink('Contact')">Contact Me</button>
+      <button class="profile-nav" onclick="navLink('Profil')">Profile</button>
+    </div>
+  </nav>
+  <div class="nav-extra">
+    <a href="#" id="hamburger-menu"><i class="fas fa-bars"></i></a>
+  </div>
+  <div id="Home" class="w3-container nav">
+    <div class="hero-left">
+      <h1 class="hello" id="typed">Hello,
+        <span class="typer" id="main" data-words="I am Albilal Bintang" data-delay="100" data-deleteDelay="1000"
+          data-loop="false"></span>
+        <span class="cursor" data-owner="main"></span>
+      </h1>
+      <p class="pe">Web Developer</p>
+      <p class="pe-desc">Experienced in website development .
+        Focusing at Frontend & Backend. Development that using React JS for frontend framework and Development that
+        using LARAVEL and Node JS for backend framework.</p>
+      <button class="btn" onclick="navLink('Contact')"> <i class="fas fa-rocket"></i> Hire Me</button>
+      <div class="social-media">
+        <a href="https://www.instagram.com/albilalbintang/"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/bilalll7"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/albilal-bintang-iskandar/"> <i class="fab fa-linkedin"></i></a>
+        <a href="https://open.spotify.com/user/31exv4prsil6xn2w4r52dontn66m?si=560187e7f07e4b0e"> <i
+            class="fab fa-spotify"></i></a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="./assets/img/img-code.png" class="animation-icon" />
+      <img src="./assets/img/img-roket.png" class="animation-icon" />
+      <img src="./assets/img/img-wifi.png" class="animation-icon" />
+      <img src="./assets/img/hero-image.png" alt="Hero Image">
+    </div>
+  </div>
+  <div class="none">
+    <div id="About" class="w3-container nav" style="display: none;">
+      <h1>About Me</h1>
+      <p>My Profile</p>
+      <div class="about">
+        <div class="about-left">
+          <img src="./assets/img/all1.jpg" alt="image" width="300px">
+        </div>
+        <div class="about-right">
+          <p className="p-first">
+            Hello! I’m <b>Albilal</b> Bintang Iskandar, and I’m a Junior Web
+            Developer who loves coding and learning new things.
+          </p>
+          <p>
+            I’ve been programming since 2020, and I have never stopped
+            programming since then. I might even say I find it fun to program -
+            most of the time. I attended vocational high school with major in
+            Software Engineering, and I continued my study in Indonesian
+            Computer University with major in Informatics Engineering. During my
+            time as a student, I’ve been involved as freelance projects, and
+            internships. I’ve also been involved in several competitions. More
+            on that later!
+          </p>
+          <p>
+            While I know several programming languages, I’m most comfortable
+            with JavaScript and PHP. Other languages that I’m familiar with are
+            PHP, Java and Python. I’m also familiar with several frameworks and
+            libraries, such as React, Vue, Vite, Laravel, Bootstrap, and
+            Tailwind. Currenly, I’m exploring Dart - which is a super cool
+            language. They have a lot of interesting concepts! Sometimes I wish
+            I could use them in my daily job without having to worry about
+            confusing my teammates.
+          </p>
+          <p>
+            Okay, enough talk about programming! Let’s get into my interests. I
+            also play games. I play several MOBA games, for example Mobile
+            Legends, Wild Rift and DOTA 2. But I focus more on playing Mobile
+            Legends. I also had time to participate in the mobile legends pro
+            scene up to tier III. I also had the opportunity to jockey for
+            mobile legends accounts, tournaments and earn income from there.
+            I've spent over 10,000 hours playing it, and I'm still not bored.
+            There are many overhaul mods that give the game hundreds of hours
+            more play time. Unfortunately (or rather, fortunately), I don't have
+            much time left to play games at the moment.
+          </p>
+          <p>
+            Wow, that’s a lot of things about me! I hope you enjoy reading it.
+            If you want to know more about me, feel free to contact me through
+            my social media or email. I’m always open to new opportunities and
+            new friends. Have a nice day~
+          </p>
+          <p class="cheers">Cheers!</p>
+          <a href="./assets/pdf/CV_AlbilalBIntangIskandar.pdf" download="CV Albilal Bintang Iskandar" class="btn"><i
+              class="fas fa-download"></i> Download
+            CV</a>
+        </div>
+      </div>
+      <!-- Education -->
+      <div class="education-wrapper">
+        <section id="education" class="education">
+          <div class="education-title-wrapper">
+            <h3 class="h3-education">Education</h3>
+          </div>
+          <ol class="list">
+            <li class="item">
+              <h4 class="item-title">Indonesian Computer University</h4>
+              <span>2023 - Now</span>
+              <p class="item-text">Informatics Engineering</p>
+            </li>
+            <li class="item">
+              <h4 class="item-title">SMK Negeri 4 Kuningan</h4>
+              <span>2020 - 2023</span>
+              <p class="item-text">Software Engineering</p>
+            </li>
+          </ol>
+        </section>
+        <!-- Experience -->
+        <section id="experience" class="experience">
+          <div class="experience-title-wrapper">
+            <h3 class="h3-experience">Experience</h3>
+          </div>
+          <ol class="list">
+            <li class="item">
+              <h4 class="item-title">Web Developer</h4>
+              <span>May 2023</span>
+              <p class="item-text">SMK Negeri 4 Kuningan</p>
+            </li>
+            <li class="item">
+              <h4 class="item-title">IT Business Analyst</h4>
+              <span>2022 - 2023</span>
+              <p class="item-text">PT. Wisesa Consulting Indonesia</p>
+            </li>
+          </ol>
+        </section>
+      </div>
+      <!-- Batas -->
+    </div>
+  </div>
+  <div id="Skill" class="w3-container nav" style="display: none;">
+    <h1>My Skill</h1>
+    <p>I am someone who enjoys seeking challenges. Here are a few skills that I have developed and honed.</p>
+    <div class="skill">
+      <div class="box">
+        <div class="html col">
+          <img class="language" src="./assets/img/html5.png" alt="">
+        </div>
+        <div class="css col">
+          <img class="language" src="./assets/img/css3.png" alt="">
+        </div>
+        <div class="js col">
+          <img class="language" src="./assets/img/js.svg" alt="">
+        </div>
+        <div class="react col">
+          <img class="language" src="./assets/img/reactjs.png" alt="">
+        </div>
+        <div class="next col">
+          <img class="language" src="./assets/img/nextjs.png" alt="">
+        </div>
+        <div class="laravel col">
+          <img class="language" src="./assets/img/laravel.png" alt="">
+        </div>
+        <div class="bootstrap col">
+          <img class="language" src="./assets/img/bootstrap.png" alt="">
+        </div>
+        <div class="tailwind col">
+          <img class="language" src="./assets/img/tailwind.png" alt="">
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div id="Contact" class="w3-container nav" style="display: none;">
+    <!-- Contact Me -->
+    <h1>Contact Me</h1>
+    <p>I'm interested in freelance. However, if you have other request or question, don't hesitate to use the form.
+    </p>
+    <div class="contact">
+      <div class="contact-left">
+        <img src="./assets/img/oke.png" alt="contact" class="img-contact">
+      </div>
+      <div class="contact-right">
+        <form action="">
+          <input class="input-form" type="text" name="name" id="name" placeholder=" Your Name...">
+          <input class="input-form" type="email" name="email" id="email" placeholder="Email">
+          <textarea class="input-form" name="message" id="message" cols="65" rows="10"
+            placeholder="Your Message..."></textarea>
+          <button class="btn" type="submit"><i class="fas fa-rocket"></i>Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Akhir Contact -->
+  <div id="Profil" class="nav" style="display: none;">
+    <h1>My Profile</h1>
+    <p>Welcome to my profile</p>
+    <div class="profil">
+      <div class="profil-left">
+        <img src="./assets/img/all2.jpg" alt="all2">
+      </div>
+      <div class="profil-right">
+        <h2>Albilal Bintang Iskandar</h2>
+        <p>10123221</p>
+        <p>IF-6</p>
+        <p>Indonesian Computer University</p>
+        <div class="social-media">
+          <a href="https://www.instagram.com/albilalbintang/"><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/bilalll7"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/albilal-bintang-iskandar/"> <i class="fab fa-linkedin"></i></a>
+          <a href="https://open.spotify.com/user/31exv4prsil6xn2w4r52dontn66m?si=560187e7f07e4b0e"> <i
+              class="fab fa-spotify"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-wrapper">
+        <div class="footer-left">
+          <h2>Albilal Bintang</h2>
+          <p>Informatics Engineering</p>
+        </div>
+        <div class="footer-mid">
+          <h2>Menu</h2>
+          <div class="menu">
+            <a href="#" onclick="reload()">Home</a>
+            <a href="#" onclick="navLink('About')">About Me</a>
+            <a href="#" onclick="navLink('Skill')">My Skill</a>
+            <a href="#" onclick="navLink('Contact')">Contact Me</a>
+            <a href="#" onclick="navLink('Profil')">Profile</a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <h2>Let's Connect</h2>
+          <div class="social-media">
+            <a href="https://www.instagram.com/albilalbintang/">Instagram</a>
+            <a href="mailto:albilalbintang4@gmail.com">Email</a>
+            <a href="https://github.com/bilalll7">GitHub</a>
+            <a href="https://www.linkedin.com/in/albilal-bintang-iskandar/">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="cr">
+        <p>&copy; 2024 Copyright - Albilal Bintang Iskandar</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
